@@ -62,15 +62,11 @@
     <Compile Include="SimpleUIDemoPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\COM3D2.SimpleUI\COM3D2.SimpleUI.csproj">
-      <Project>{290111f7-f530-476d-8496-233f1e4bc6e5}</Project>
-      <Name>COM3D2.SimpleUI</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <Import Project="..\COM3D2.SimpleUIShared\COM3D2.SimpleUIShared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy $(TargetPath) F:\COM-3d2\BepinEx\plugins
-copy $(TargetDir)\COM3D2.SimpleUI.dll F:\COM-3d2\BepinEx\plugins</PostBuildEvent>
+    <PostBuildEvent>set PLUGINDIR="F:\COM-3d2\BepinEx\plugins\SimpleUIDemo\"
+if not exist %25PLUGINDIR%25 mkdir %25PLUGINDIR%25
+copy $(TargetPath) %25PLUGINDIR%25</PostBuildEvent>
   </PropertyGroup>
 </Project>

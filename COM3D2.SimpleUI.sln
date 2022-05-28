@@ -7,7 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM3D2.SimpleUI", "COM3D2.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM3D2.SimpleUIDemo", "COM3D2.SimpleUIDemo\COM3D2.SimpleUIDemo.csproj", "{6AD4F6A1-74DE-4167-92EB-4EF761C8287E}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "COM3D2.SimpleUIShared", "COM3D2.SimpleUIShared\COM3D2.SimpleUIShared.shproj", "{B3A8378D-2205-45A8-AAD4-F08F9D0FF281}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		COM3D2.SimpleUIShared\COM3D2.SimpleUIShared.projitems*{290111f7-f530-476d-8496-233f1e4bc6e5}*SharedItemsImports = 4
+		COM3D2.SimpleUIShared\COM3D2.SimpleUIShared.projitems*{6ad4f6a1-74de-4167-92eb-4ef761c8287e}*SharedItemsImports = 4
+		COM3D2.SimpleUIShared\COM3D2.SimpleUIShared.projitems*{b3a8378d-2205-45a8-aad4-f08f9d0ff281}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

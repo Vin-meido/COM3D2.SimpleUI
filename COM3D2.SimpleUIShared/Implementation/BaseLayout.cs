@@ -75,7 +75,7 @@ namespace COM3D2.SimpleUI.Implementation
             this.InitLayout();
         }
 
-        protected virtual void InitLayout()
+        public virtual void InitLayout()
         {
         }
 
