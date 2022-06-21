@@ -27,7 +27,7 @@ namespace COM3D2.SimpleUIDemo
 
         public void Start()
         {
-            //Demo1();
+            Demo1();
             //Demo2();
             //Demo3();
             //Demo4();

@@ -31,13 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\libs\jp-3.0\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\COM3D2.GameLibs.2.17.0-r.0\lib\net35\Assembly-CSharp.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\libs\jp-3.0\Assembly-CSharp-firstpass.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\COM3D2.GameLibs.2.17.0-r.0\lib\net35\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,14 +43,66 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\libs\UnityEngine.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UnityEngine.Modules.5.6.4\lib\net35\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\COM3D2.GameLibs.2.17.0-r.0\lib\net35\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Events.cs" />
+    <Compile Include="Extensions\IControlExtensions.cs" />
+    <Compile Include="Extensions\IControlValueExtensions.cs" />
+    <Compile Include="Extensions\ILayoutExtensions.cs" />
+    <Compile Include="Implementation\AtlasHelper.cs" />
+    <Compile Include="Implementation\BaseLayout.cs" />
+    <Compile Include="Implementation\ILayoutComponent.cs" />
+    <Compile Include="Implementation\SimpleAutoLayout.cs" />
+    <Compile Include="Implementation\SimpleBox.cs" />
+    <Compile Include="Implementation\SimpleButton.cs" />
+    <Compile Include="Implementation\SimpleControl.cs" />
+    <Compile Include="Implementation\SimpleDropdown.cs" />
+    <Compile Include="Implementation\SimpleFixedLayout.cs" />
+    <Compile Include="Implementation\SimpleGenericDropdown.cs" />
+    <Compile Include="Implementation\SimpleLabel.cs" />
+    <Compile Include="Implementation\SimpleScrollView.cs" />
+    <Compile Include="Implementation\SimpleSlider.cs" />
+    <Compile Include="Implementation\SimpleTextField.cs" />
+    <Compile Include="Implementation\SimpleToggle.cs" />
+    <Compile Include="Implementation\SimpleToolbar.cs" />
+    <Compile Include="Implementation\UIUtils.cs" />
+    <Compile Include="Interfaces\IBox.cs" />
+    <Compile Include="Interfaces\IButton.cs" />
+    <Compile Include="Interfaces\IContent.cs" />
+    <Compile Include="Interfaces\IContentControl.cs" />
+    <Compile Include="Interfaces\IControl.cs" />
+    <Compile Include="Interfaces\IControlContainer.cs" />
+    <Compile Include="Interfaces\IControlValue.cs" />
+    <Compile Include="Interfaces\IDropdown.cs" />
+    <Compile Include="Interfaces\IDropdownGeneric.cs" />
+    <Compile Include="Interfaces\IGroup.cs" />
+    <Compile Include="Interfaces\ILabel.cs" />
+    <Compile Include="Interfaces\IScrollView.cs" />
+    <Compile Include="Interfaces\IScrollViewOptions.cs" />
+    <Compile Include="Interfaces\ISelectionGrid.cs" />
+    <Compile Include="Interfaces\ISlider.cs" />
+    <Compile Include="Interfaces\ITextArea.cs" />
+    <Compile Include="Interfaces\ITextField.cs" />
+    <Compile Include="Interfaces\IToggle.cs" />
+    <Compile Include="Interfaces\IToolbar.cs" />
+    <Compile Include="Interfaces\Layouts\IAreaLayout.cs" />
+    <Compile Include="Interfaces\Layouts\IAreaLayoutOptions.cs" />
+    <Compile Include="Interfaces\Layouts\IAutoLayout.cs" />
+    <Compile Include="Interfaces\Layouts\IAutoLayoutOptions.cs" />
+    <Compile Include="Interfaces\Layouts\IFixedLayout.cs" />
+    <Compile Include="Interfaces\Layouts\ILayout.cs" />
+    <Compile Include="Interfaces\Layouts\ILayoutStyle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleUIRoot.cs" />
   </ItemGroup>
-  <Import Project="..\COM3D2.SimpleUIShared\COM3D2.SimpleUIShared.projitems" Label="Shared" />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
